@@ -1,0 +1,157 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* The title of the classes say it all */
+html,
+body {
+  height: 100%;
+  line-height: 1.2;
+  font-family: "Roboto", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Roboto", sans-serif;
+}
+header {
+  margin: 0px;
+  padding: 20px;
+  background-color: #f1f1f1;
+  text-align: center;
+  color: black;
+}
+
+/* Style the topnav */
+/* The topnav is also the bottom na */
+ul.topnav {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #333333;
+}
+
+button {
+  background-color: #333333;
+  border-radius: 4px; /* Rounded corners */
+  cursor: pointer;
+  display: block;
+  color: #f1f1f1;
+  text-align: center;
+  padding: 0px;
+  text-decoration: none;
+}
+
+button:hover {
+  background-color: #dddddd;
+  color: black;
+}
+/* Style links in topnav */
+ul.topnav li a {
+  display: block;
+  color: #f1f1f1;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Styles the button in topnav */
+ul.topnav li button {
+  background-color: #333333;
+  border-radius: 4px; /* Rounded corners */
+  cursor: pointer;
+  display: inline-block;
+  color: #f1f1f1;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul.topnav li p {
+  display: block;
+  color: #f1f1f1;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover for link */
+ul.topnav li a:hover {
+  background-color: #dddddd;
+  color: black;
+}
+
+/* Change color on hover for button */
+ul.topnav li button:hover {
+  background-color: #dddddd;
+  color: black;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.side {
+  flex: 30%;
+  background-color: #f1f1f1;
+  border: black 20px;
+  padding: 20px;
+}
+.main {
+  flex: 70%;
+  background-color: white;
+  block-size: auto;
+  border: #333333;
+  padding: 2.5%;
+}
+
+.profile_picture {
+  border-radius: 20%;
+  border-color: #333333;
+  border-width: 100px;
+}
+
+footer {
+  padding: 0;
+}
+
+footer .topnav {
+  gap: 8px;
+  padding: 4px 0;
+}
+
+/* Main Content text styling */
+
+.resume_container {
+  display: flex;
+  justify-content: space-between; /* pushes items to left and right */
+  margin-bottom: 10px;
+}
+.resume_container_in {
+  display: flex;
+  justify-content: space-between; /* pushes items to left and right */
+  margin-bottom: 10px;
+  margin-left: 20px;
+}
+
+.resume_content {
+  margin-left: 20px;
+}
+
+ul.resume_list {
+  margin-left: 40px;
+}
+/* Use media query and show the flex items vertically if screen width is less than 600px */
+@media screen and (max-width: 600px) {
+  div.flex-container {
+    flex-direction: column;
+  }
+}
